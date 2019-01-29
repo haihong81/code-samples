@@ -6,7 +6,6 @@ namespace Samples
 {
     public class PythonScript
     {
-        #region Python
         public static void Run()
         {
             Console.WriteLine("Loading helloworld.py...");
@@ -22,9 +21,5 @@ namespace Samples
                 Console.WriteLine(helloworld.welcome1("Employee #{0}"), i);
             }
         }
-
-        #endregion
     }
-
 }
-

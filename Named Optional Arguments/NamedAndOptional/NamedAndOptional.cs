@@ -2,10 +2,8 @@
 
 namespace Samples
 {
-
     public class NamedAndOptional
     {
-        #region 命名参数与可选参数
         // 具有命名参数和可选参数的方法
         public static void Search(string name, int age = 21, string city = "Pueblo")
         {
@@ -26,7 +24,5 @@ namespace Samples
             // 以相反顺序使用命名参数
             Search("Pedro", age: 45, city: "Saigon");
         }
-        #endregion
     }
-
 }

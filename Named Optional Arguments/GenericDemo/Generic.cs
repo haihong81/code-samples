@@ -14,19 +14,23 @@ namespace Samples
         protected class Node
         {
             public Node next;
+
             // T 作为私有成员数据类型。
             private T data;
+
             // 在非泛型构造函数中使用的 T。
             public Node(T t)
             {
                 next = null;
                 data = t;
             }
+
             public Node Next
             {
                 get { return next; }
                 set { next = value; }
             }
+
             // T 作为属性的返回类型。
             public T Data
             {
@@ -49,7 +53,7 @@ namespace Samples
         }
 
         // 实现 GetEnumerator 以返回 IEnumerator<T>，从而启用列表的
-        // foreach 迭代。请注意，在 C# 2.0 中， 
+        // foreach 迭代。请注意，在 C# 2.0 中，
         // 不需要实现 Current 和 MoveNext。
         // 编译器将创建实现 IEnumerator<T> 的类。
         public IEnumerator<T> GetEnumerator()
@@ -70,7 +74,6 @@ namespace Samples
             return GetEnumerator();
         }
     }
-
 
     public class SortedList<T> : MyList<T> where T : IComparable<T>
     {
@@ -109,13 +112,11 @@ namespace Samples
                         previous = tmp;
                         swapped = true;
                     }
-
                     else
                     {
                         previous = current;
                         current = current.next;
                     }
-
                 }// end while
             } while (swapped);
         }
@@ -127,8 +128,8 @@ namespace Samples
     // 存储在泛型列表中。
     public class Person : IComparable<Person>
     {
-        string name;
-        int age;
+        private string name;
+        private int age;
 
         public Person(string s, int i)
         {
@@ -155,9 +156,9 @@ namespace Samples
         }
     }
 
-   public class Generics
+    public class Generics
     {
-       public static void SortList()
+        public static void SortList()
         {
             // 声明并实例化一个新的范型 SortedList 类。
             // Person 是类型参数。

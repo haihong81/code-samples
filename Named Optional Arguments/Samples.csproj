@@ -77,7 +77,7 @@
     <Compile Include="NamedAndOptional\NamedAndOptional.cs" />
     <Compile Include="IEnumerableDemo\IEnumerableDemo.cs" />
     <Compile Include="CovariantDemo\Covariant.cs" />
-    <Compile Include="PermissionDemo\DomainPermission.cs" />
+    <Compile Include="DomainPermissionDemo\DomainPermission.cs" />
     <Compile Include="UnSafeCodeDemo\UnsafeCode.cs" />
     <Compile Include="PythonDemo\Python.cs" />
     <Compile Include="GenericDemo\Generic.cs" />

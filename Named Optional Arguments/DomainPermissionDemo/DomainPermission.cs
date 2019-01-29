@@ -6,7 +6,6 @@ namespace Samples
 {
     public class DomainPermission
     {
-        #region DomainPermission
         public static void SetDemo()
         {
             //创建文件 IO 读取权限
@@ -23,7 +22,7 @@ namespace Samples
             //编写示例源文件以读取
             System.IO.File.WriteAllText("TEST.TXT", "File Content");
 
-            //-------- 完全信任地调用方法 -------- 
+            //-------- 完全信任地调用方法 --------
             try
             {
                 Console.WriteLine("App Domain Name: " + AppDomain.CurrentDomain.FriendlyName);
@@ -34,7 +33,7 @@ namespace Samples
                 Console.WriteLine(ex.Message);
             }
 
-            //-------- 创建具有文件 IO 读取权限的 AppDomain -------- 
+            //-------- 创建具有文件 IO 读取权限的 AppDomain --------
             AppDomain sandbox = AppDomain.CreateDomain("Sandboxed AppDomain With FileIO.Read permission", AppDomain.CurrentDomain.Evidence, AppDomain.CurrentDomain.SetupInformation, grantset, null);
             try
             {
@@ -46,8 +45,7 @@ namespace Samples
                 Console.WriteLine(ex.Message);
             }
 
-
-            //-------- 创建没有文件 IO 读取权限的 AppDomain -------- 
+            //-------- 创建没有文件 IO 读取权限的 AppDomain --------
             //应当引发安全异常
             PermissionSet grantset2 = BasePermissionSet.Copy();
             //grantset2.AddPermission(FileIOReadPermission);
@@ -64,8 +62,6 @@ namespace Samples
             }
 
             Console.WriteLine("");
-            Console.WriteLine("Press any key to end.");
-            Console.ReadKey();
         }
 
         public static void ReadFileMethod()
@@ -74,9 +70,5 @@ namespace Samples
             Console.WriteLine("File Content: " + S);
             Console.WriteLine("");
         }
-        #endregion
-
     }
-
 }
-

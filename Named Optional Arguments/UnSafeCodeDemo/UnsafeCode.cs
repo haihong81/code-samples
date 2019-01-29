@@ -4,8 +4,6 @@ namespace Samples
 {
     public class UnsafeCode
     {
-        #region unsafe FastCopy
-
         private static unsafe void Copy(byte[] src, int srcIndex,
                                         byte[] dst, int dstIndex, int count)
         {
@@ -21,7 +19,6 @@ namespace Samples
             {
                 throw new ArgumentException();
             }
-
 
             // 以下固定语句固定
             // src 对象和 dst 对象在内存中的位置，以使这两个对象
@@ -63,8 +60,5 @@ namespace Samples
                 Console.Write(b[i] + " ");
             Console.WriteLine("\n");
         }
-
-        #endregion
-
     }
 }

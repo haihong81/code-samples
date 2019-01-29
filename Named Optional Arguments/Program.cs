@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Samples
 {
@@ -6,22 +7,36 @@ namespace Samples
     {
         private static void Main(string[] args)
         {
-            Do("MyDerived.DerivedOverideAndHide", new Action(MyDerived.DerivedOverideAndHide));
-            Do("NamedAndOptional.Run", new Action(NamedAndOptional.Run));
-            Do("Generics.SortList", new Action(Generics.SortList));
-            Do("UnsafeCode.FastCopy", new Action(UnsafeCode.FastCopy));
-            Do("PythonScript.Run", new Action(PythonScript.Run));
-            Do("CovariantDemo.Run", new Action(CovariantDemo.Run));
-            Do("DomainPermission.SetDemo", new Action(DomainPermission.SetDemo));
-            Do("IEnumerableDemo.Yield", new Action(IEnumerableDemo.Yield));
-
-            Console.ReadLine();
+            foreach (var demo in Demos())
+            {
+                Run(demo);
+            }
         }
 
-        private static void Do(string MethodName, Action action)
+        private static List<Action> Demos()
         {
-            Console.WriteLine(MethodName);
+            List<Action> actions = new List<Action>();
+
+            actions.Add(new Action(MyDerived.DerivedOverideAndHide));
+            actions.Add(new Action(NamedAndOptional.Run));
+            actions.Add(new Action(Generics.SortList));
+            actions.Add(new Action(UnsafeCode.FastCopy));
+            actions.Add(new Action(PythonScript.Run));
+            actions.Add(new Action(CovariantDemo.Run));
+            actions.Add(new Action(DomainPermission.SetDemo));
+            actions.Add(new Action(IEnumerableDemo.Yield));
+
+            return actions;
+        }
+
+        private static void Run(Action action)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(action.Method.DeclaringType.Name + " : " + action.Method.ToString());
+
+            Console.ForegroundColor = ConsoleColor.White;
             action();
+
             Console.ReadLine();
         }
     }

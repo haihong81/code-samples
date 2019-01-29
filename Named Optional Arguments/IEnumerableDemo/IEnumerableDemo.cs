@@ -3,9 +3,8 @@ using System.Collections.Generic;
 
 namespace Samples
 {
-    class IEnumerableDemo
+    internal class IEnumerableDemo
     {
-        #region Yield
         public static class NumberList
         {
             // 创建一个整数数组。
@@ -42,6 +41,5 @@ namespace Samples
             foreach (int i in NumberList.GetOdd())
                 Console.WriteLine(i);
         }
-        #endregion
     }
 }
