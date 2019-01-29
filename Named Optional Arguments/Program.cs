@@ -43,7 +43,13 @@ namespace Samples
 
             //actions.Add(new Action(PythonScript.Run));
             //actions.Add(new Action(CovariantDemo.Run));
+
             //actions.Add(new Action(DomainPermission.SetDemo));
+
+            //调用错误 堆栈不平衡
+            actions.Add(new Action(PlatformInvokeDemo.Run));
+            actions.Add(new Action(PlatformInvokeDemo1.Run));
+            actions.Add(new Action(PlatformInvokeDemo2.Run));
 
             //actions.Add(new Action(ClassAndStructDemo.Run));
             //actions.Add(new Action(ClassAndStructDemo.GetSetMethod));
@@ -51,7 +57,7 @@ namespace Samples
             //actions.Add(new Action(IEnumerableDemo.Yield));
             //actions.Add(new Action(IEnumerableDemo.EnumerateTokens));
 
-            actions.Add(new Action(LibarayRefDemo.Run));
+            //actions.Add(new Action(LibarayRefDemo.Run));
 
             return actions;
         }
