@@ -23,9 +23,12 @@ namespace Samples
             //List<Func<int>> funcs = new List<Func<int>>();
 
 
-            actions.Add(new Action(NullableOperator.BoxingDemo));
-            actions.Add(new Action(NullableOperator.OperatorDemo));
-            actions.Add(new Action(NullableOperator.DisplayValueDemo));
+            //actions.Add(new Action(NullableOperator.BoxingDemo));
+            //actions.Add(new Action(NullableOperator.OperatorDemo));
+            //actions.Add(new Action(NullableOperator.DisplayValueDemo));
+
+
+
 
 
             //actions.Add(new Action(UnsafeCode.FastCopy));
@@ -47,6 +50,8 @@ namespace Samples
 
             //actions.Add(new Action(IEnumerableDemo.Yield));
             //actions.Add(new Action(IEnumerableDemo.EnumerateTokens));
+
+            actions.Add(new Action(LibarayRefDemo.Run));
 
             return actions;
         }
