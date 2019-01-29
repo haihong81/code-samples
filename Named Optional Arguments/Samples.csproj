@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{EE293BF3-1834-438C-8F6F-E267E474ECCD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Named_Optional_Arguments</RootNamespace>
+    <RootNamespace>Samples</RootNamespace>
     <AssemblyName>Samples</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -81,6 +81,7 @@
     <Compile Include="BasicDemo\PartialClass\CharTypesPrivate.cs" />
     <Compile Include="BasicDemo\PartialClass\CharTypesPublic.cs" />
     <Compile Include="BasicDemo\PartialClass\PartialTypes.cs" />
+    <Compile Include="BasicDemo\NullableOperator.cs" />
     <Compile Include="UnSafeCodeDemo\printversion.cs" />
     <Compile Include="UnSafeCodeDemo\ReadFile.cs" />
     <Compile Include="BasicDemo\StructDemo.cs" />

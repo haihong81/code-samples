@@ -23,10 +23,14 @@ namespace Samples
             //List<Func<int>> funcs = new List<Func<int>>();
 
 
+            actions.Add(new Action(NullableOperator.BoxingDemo));
+            actions.Add(new Action(NullableOperator.OperatorDemo));
+            actions.Add(new Action(NullableOperator.DisplayValueDemo));
+
+
             //actions.Add(new Action(UnsafeCode.FastCopy));
             //actions.Add(new Action(UnsafeCode.ReadFile));
-
-            //此方法无法查询出版本 原因不知 Can't PrintVersion Don't know Why
+            ////此方法无法查询出版本 原因不知 Can't PrintVersion Don't know Why
             //actions.Add(new Action(UnsafeCode.PrintVersion));
 
             //actions.Add(new Action(PartialClassesDemo.Run));
@@ -38,8 +42,8 @@ namespace Samples
             //actions.Add(new Action(CovariantDemo.Run));
             //actions.Add(new Action(DomainPermission.SetDemo));
 
-            actions.Add(new Action(ClassAndStructDemo.Run));
-            actions.Add(new Action(ClassAndStructDemo.GetSetMethod));
+            //actions.Add(new Action(ClassAndStructDemo.Run));
+            //actions.Add(new Action(ClassAndStructDemo.GetSetMethod));
 
             //actions.Add(new Action(IEnumerableDemo.Yield));
             //actions.Add(new Action(IEnumerableDemo.EnumerateTokens));
@@ -47,13 +51,13 @@ namespace Samples
             return actions;
         }
 
-        private static List<Func<int>> FuncDemos()
-        {
+        //private static List<Func<int>> FuncDemos()
+        //{
 
-            List<Func<int>> funcs = new List<Func<int>>();
+        //    List<Func<int>> funcs = new List<Func<int>>();
 
-            return funcs;
-        }
+        //    return funcs;
+        //}
 
         private static void Run(Action action)
         {
