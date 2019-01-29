@@ -7,7 +7,7 @@
     <ProjectGuid>{EE293BF3-1834-438C-8F6F-E267E474ECCD}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Named_Optional_Arguments</RootNamespace>
-    <AssemblyName>Named Optional Arguments</AssemblyName>
+    <AssemblyName>Samples</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -74,15 +74,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NamedAndOptional\NamedAndOptional.cs" />
-    <Compile Include="IEnumerableDemo\IEnumerableDemo.cs" />
-    <Compile Include="CovariantDemo\Covariant.cs" />
+    <Compile Include="BasicDemo\NamedAndOptional.cs" />
+    <Compile Include="BasicDemo\IEnumerableDemo.cs" />
+    <Compile Include="BasicDemo\Covariant.cs" />
     <Compile Include="DomainPermissionDemo\DomainPermission.cs" />
+    <Compile Include="BasicDemo\PartialClass\CharTypesPrivate.cs" />
+    <Compile Include="BasicDemo\PartialClass\CharTypesPublic.cs" />
+    <Compile Include="BasicDemo\PartialClass\PartialTypes.cs" />
+    <Compile Include="UnSafeCodeDemo\printversion.cs" />
+    <Compile Include="UnSafeCodeDemo\ReadFile.cs" />
+    <Compile Include="BasicDemo\StructDemo.cs" />
     <Compile Include="UnSafeCodeDemo\UnsafeCode.cs" />
     <Compile Include="PythonDemo\Python.cs" />
-    <Compile Include="GenericDemo\Generic.cs" />
+    <Compile Include="BasicDemo\Generic.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="BaseOveride\DerivedOverideAndHide.cs" />
+    <Compile Include="BasicDemo\OverideDemo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -94,5 +100,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

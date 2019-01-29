@@ -43,7 +43,7 @@
                 return "MyDerived-Meth3";
             }
 
-            public static void DerivedOverideAndHide()
+            public static void OverideDemo()
             {
                 MyDerived mD = new MyDerived();
                 MyBase mB = (MyBase)mD;

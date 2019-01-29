@@ -2,7 +2,7 @@
 
 namespace Samples
 {
-    public class UnsafeCode
+    public partial class UnsafeCode
     {
         private static unsafe void Copy(byte[] src, int srcIndex,
                                         byte[] dst, int dstIndex, int count)
