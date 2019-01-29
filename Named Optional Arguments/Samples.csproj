@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -73,7 +74,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NamedAndOptional\NamedAndOptional.cs" />
+    <Compile Include="IEnumerableDemo\IEnumerableDemo.cs" />
+    <Compile Include="CovariantDemo\Covariant.cs" />
+    <Compile Include="PermissionDemo\DomainPermission.cs" />
+    <Compile Include="UnSafeCodeDemo\UnsafeCode.cs" />
+    <Compile Include="PythonDemo\Python.cs" />
+    <Compile Include="GenericDemo\Generic.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="BaseOveride\DerivedOverideAndHide.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -81,7 +90,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="PythonScripts\helloworld.py">
+    <Content Include="PythonDemo\helloworld.py">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
