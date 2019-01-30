@@ -21,35 +21,11 @@ namespace Samples
         {
             return new List<Action>(){
 
-                                    ////可空对象
-                                    //new Action(NullableOperator.BoxingDemo),
-                                    //new Action(NullableOperator.OperatorDemo),
-                                    //new Action(NullableOperator.DisplayValueDemo),
-
-                                    ////属性
-                                    //new Action(PropertiesDemo.PropertiesOveride),
-                                    //new Action(PropertiesDemo.PropertiesOveride),
-
-                                    //特性 Attribute
-                                    new Action(AttributeDemo.Run),
-
-                                    //索引
-                                    //new Action(IndexDemo.Reverse),                  
-
-                                    ////不安全代码
-                                    //new Action(UnsafeCode.FastCopy),
-                                    //new Action(UnsafeCode.ReadFile),
-
-                                    //不安全代码 此方法无法查询出版本 原因不知 Can't PrintVersion Don't know Why
-                                    //new Action(UnsafeCode.PrintVersion),
-
                                     //new Action(PartialClassesDemo.Run),             //部分类
                                     //new Action(MyDerived.OverideDemo),              //类的重写 overide
                                     //new Action(NamedAndOptional.Run),               //可选的命名参数
                                     //new Action(Generics.SortList),                  //泛型                                    
-                                    //new Action(PythonScript.Run),                   //Python脚本                                    
                                     //new Action(CovariantDemo.Run),                  //继承与协变逆变
-                                    //new Action(DomainPermission.SetDemo),           //权限
 
                                     ////Struct与Class的区别
                                     //new Action(ClassAndStructDemo.Run),
@@ -59,8 +35,45 @@ namespace Samples
                                     //new Action(IEnumerableDemo.Yield),
                                     //new Action(IEnumerableDemo.EnumerateTokens),
 
+                                    ////可空对象
+                                    //new Action(NullableOperator.BoxingDemo),
+                                    //new Action(NullableOperator.OperatorDemo),
+                                    //new Action(NullableOperator.DisplayValueDemo),
+
+                                    ////属性
+                                    //new Action(PropertiesDemo.PropertiesOveride),
+                                    //new Action(PropertiesDemo.PropertiesOveride),
+
+                                    //特性 Custom Attribute
+                                    //new Action(AttributeDemo.Run),                //Custom Attribute
+                                    //new Action(AttributeDemo.ShowConditional),    //ConditionalAttribute
+
+                                    //索引
+                                    //new Action(IndexDemo.Reverse), 
+                                    
                                     ////Event
                                     //new Action(EventListenDemo.Run),
+
+                                    //Delegate
+                                    //new Action(DelegateDemo.ProcessBookMethods),
+                                    //new Action(DelegateDemo.Compose),
+
+                                    //Interface
+                                    new Action(SingleInterfaceDemoBox.Show),
+                                    new Action(MultiInterfaceDemoBox.Show),                                                 
+
+                                    ////不安全代码
+                                    //new Action(UnsafeCode.FastCopy),
+                                    //new Action(UnsafeCode.ReadFile),
+
+                                    //不安全代码 此方法无法查询出版本 原因不知 Can't PrintVersion Don't know Why
+                                    //new Action(UnsafeCode.PrintVersion),
+
+                                    //权限
+                                    //new Action(DomainPermission.SetDemo),           
+
+                                    //Python脚本
+                                    //new Action(PythonScript.Run),                   
 
                                     ////类库引用
                                     //new Action(LibraryRefDemo.Run),

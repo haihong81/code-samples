@@ -2,6 +2,39 @@
 using System.Collections;
 using System.Reflection;
 
+
+
+namespace TraceFunction
+{
+    using System.Diagnostics;
+
+    public class Trace
+    {
+        [Conditional("DEBUG")]
+        public static void Message(string traceMessage)
+        {
+            Console.WriteLine("[TRACE] - " + traceMessage);
+        }
+    }
+}
+
+namespace Samples
+{
+    using TraceFunction;
+
+    public partial class AttributeDemo
+    {
+        public static void ShowConditional()
+        {
+            Trace.Message("Main Starting");
+            Console.WriteLine("Main Method Running");
+            Trace.Message("Main Ending");
+        }
+    }
+}
+
+/*******************************************************************************************************/
+
 /*
 Attributes for : Account
 Author : Joe Programmer
@@ -24,7 +57,7 @@ Member GetType is NOT tested!
 
 namespace Samples
 {
-    internal class AttributeDemo
+    public partial class AttributeDemo
     {
         private static bool IsMemberTested(MemberInfo member)
         {

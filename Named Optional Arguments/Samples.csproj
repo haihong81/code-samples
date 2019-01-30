@@ -32,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="IronPython, Version=2.7.9.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
@@ -75,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasicDemo\AttributeDemo.cs" />
+    <Compile Include="BasicDemo\DelegeteDemo.cs" />
     <Compile Include="BasicDemo\NamedAndOptional.cs" />
     <Compile Include="BasicDemo\IEnumerableDemo.cs" />
     <Compile Include="BasicDemo\Covariant.cs" />
@@ -88,6 +90,7 @@
     <Compile Include="BasicDemo\EventListenDemo.cs" />
     <Compile Include="BasicDemo\PropertyDemo\PropertiesDemo.cs" />
     <Compile Include="BasicDemo\IndexDemo.cs" />
+    <Compile Include="BasicDemo\ExplicitInterface.cs" />
     <Compile Include="PlateFormInvoke\PlateFormInvoke.cs" />
     <Compile Include="UnSafeCodeDemo\printversion.cs" />
     <Compile Include="UnSafeCodeDemo\ReadFile.cs" />
