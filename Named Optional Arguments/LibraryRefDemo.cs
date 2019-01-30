@@ -3,7 +3,7 @@
 // 命名空间中定义的类型可用于此编译单元：
 using Functions;
 
-class LibarayRefDemo
+class LibraryRefDemo
 {
     public static void Run()
     {

@@ -82,7 +82,7 @@
     <Compile Include="BasicDemo\PartialClass\CharTypesPublic.cs" />
     <Compile Include="BasicDemo\PartialClass\PartialTypes.cs" />
     <Compile Include="BasicDemo\NullableOperator.cs" />
-    <Compile Include="LibraryDemo.cs" />
+    <Compile Include="LibraryRefDemo.cs" />
     <Compile Include="PlateFormInvoke\PlateFormInvoke.cs" />
     <Compile Include="UnSafeCodeDemo\printversion.cs" />
     <Compile Include="UnSafeCodeDemo\ReadFile.cs" />

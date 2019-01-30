@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PartialClassesExample
+namespace Samples
 {
     internal class PartialClassesDemo
     {

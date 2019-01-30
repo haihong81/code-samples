@@ -1,4 +1,4 @@
-﻿namespace PartialClassesExample
+﻿namespace Samples
 {
     // 使用 partial 关键字可以在其他 .cs 文件中定义
     // 此类的附加方法、字段和属性。

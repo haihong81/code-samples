@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -76,17 +77,12 @@ namespace Samples
     {
         public static void ReadFile()
         {
-            string filepath = "";
+            string filepath = "TEST.TXT";
+            File.Create(filepath).Close();
+            File.AppendAllText(filepath, "File Content To Display!");
             bool getfile = false;
             while (!getfile)
             {
-                Console.WriteLine("Give Me the File Path:");
-                filepath = Console.ReadLine();
-
-                if (string.IsNullOrEmpty(filepath))
-                {
-                    Console.WriteLine("Give Me the File Path:");
-                }
                 if (!System.IO.File.Exists(filepath))
                 {
                     Console.WriteLine("File " + filepath + " not found.");
