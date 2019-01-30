@@ -77,12 +77,16 @@
     <Compile Include="BasicDemo\NamedAndOptional.cs" />
     <Compile Include="BasicDemo\IEnumerableDemo.cs" />
     <Compile Include="BasicDemo\Covariant.cs" />
+    <Compile Include="BasicDemo\PropertyDemo\PropertiesOverideDemo.cs" />
     <Compile Include="DomainPermissionDemo\DomainPermission.cs" />
     <Compile Include="BasicDemo\PartialClass\CharTypesPrivate.cs" />
     <Compile Include="BasicDemo\PartialClass\CharTypesPublic.cs" />
     <Compile Include="BasicDemo\PartialClass\PartialTypes.cs" />
     <Compile Include="BasicDemo\NullableOperator.cs" />
-    <Compile Include="LibraryRefDemo.cs" />
+    <Compile Include="BasicDemo\LibraryRefDemo.cs" />
+    <Compile Include="BasicDemo\EventListenDemo.cs" />
+    <Compile Include="BasicDemo\PropertyDemo\PropertiesDemo.cs" />
+    <Compile Include="IndexDemo.cs" />
     <Compile Include="PlateFormInvoke\PlateFormInvoke.cs" />
     <Compile Include="UnSafeCodeDemo\printversion.cs" />
     <Compile Include="UnSafeCodeDemo\ReadFile.cs" />

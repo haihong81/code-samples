@@ -19,49 +19,60 @@ namespace Samples
 
         private static List<Action> ActionDemos()
         {
-            List<Action> actions = new List<Action>();
-            //List<Func<int>> funcs = new List<Func<int>>();
+            List<Action> actions = new List<Action>(){
 
+                                    //可空对象
+                                    new Action(NullableOperator.BoxingDemo),
+                                    new Action(NullableOperator.OperatorDemo),
+                                    new Action(NullableOperator.DisplayValueDemo),
 
-            actions.Add(new Action(NullableOperator.BoxingDemo));
-            actions.Add(new Action(NullableOperator.OperatorDemo));
-            actions.Add(new Action(NullableOperator.DisplayValueDemo));
+                                    //属性
+                                    new Action(PropertiesDemo.PropertiesOveride),
+                                    new Action(PropertiesDemo.PropertiesOveride),
 
+                                    //索引
+                                    new Action(IndexDemo.Reverse),                  
 
-            actions.Add(new Action(UnsafeCode.FastCopy));
-            actions.Add(new Action(UnsafeCode.ReadFile));
-            ////此方法无法查询出版本 原因不知 Can't PrintVersion Don't know Why
-            //actions.Add(new Action(UnsafeCode.PrintVersion));
+                                    //不安全代码
+                                    new Action(UnsafeCode.FastCopy),
+                                    new Action(UnsafeCode.ReadFile),
 
-            actions.Add(new Action(PartialClassesDemo.Run));
-            actions.Add(new Action(MyDerived.OverideDemo));
-            actions.Add(new Action(NamedAndOptional.Run));
-            actions.Add(new Action(Generics.SortList));
+                                    //不安全代码 此方法无法查询出版本 原因不知 Can't PrintVersion Don't know Why
+                                    //new Action(UnsafeCode.PrintVersion),
 
-            actions.Add(new Action(PythonScript.Run));
-            actions.Add(new Action(CovariantDemo.Run));
+                                    new Action(PartialClassesDemo.Run),             //部分类
+                                    new Action(MyDerived.OverideDemo),              //类的重写 overide
+                                    new Action(NamedAndOptional.Run),               //可选的命名参数
+                                    new Action(Generics.SortList),                  //泛型                                    
+                                    new Action(PythonScript.Run),                   //Python脚本                                    
+                                    new Action(CovariantDemo.Run),                  //继承与协变逆变
+                                    new Action(DomainPermission.SetDemo),           //权限
 
-            actions.Add(new Action(DomainPermission.SetDemo));
+                                    //Struct与Class的区别
+                                    new Action(ClassAndStructDemo.Run),
+                                    new Action(ClassAndStructDemo.GetSetMethod),
 
-            //调用错误 堆栈不平衡
-            //actions.Add(new Action(PlatformInvokeDemo.Run));
-            //actions.Add(new Action(PlatformInvokeDemo1.Run));
-            //actions.Add(new Action(PlatformInvokeDemo2.Run));
+                                    //IEnumerable
+                                    new Action(IEnumerableDemo.Yield),
+                                    new Action(IEnumerableDemo.EnumerateTokens),
 
-            actions.Add(new Action(ClassAndStructDemo.Run));
-            actions.Add(new Action(ClassAndStructDemo.GetSetMethod));
+                                    //Event
+                                    new Action(EventListenDemo.Run),
 
-            actions.Add(new Action(IEnumerableDemo.Yield));
-            actions.Add(new Action(IEnumerableDemo.EnumerateTokens));
+                                    //类库引用
+                                    new Action(LibraryRefDemo.Run),
 
-            actions.Add(new Action(LibraryRefDemo.Run));
+                                    //平台调用 调用错误 堆栈不平衡  
+                                    //new Action(PlatformInvokeDemo.Run),
+                                    //new Action(PlatformInvokeDemo1.Run),
+                                    //new Action(PlatformInvokeDemo2.Run),
+            };
 
             return actions;
         }
 
         //private static List<Func<int>> FuncDemos()
         //{
-
         //    List<Func<int>> funcs = new List<Func<int>>();
 
         //    return funcs;
@@ -88,6 +99,5 @@ namespace Samples
 
         //    Console.ReadLine();
         //}
-
     }
 }

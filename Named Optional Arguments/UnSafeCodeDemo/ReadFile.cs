@@ -78,7 +78,11 @@ namespace Samples
         public static void ReadFile()
         {
             string filepath = "TEST.TXT";
-            File.Create(filepath).Close();
+            if (!File.Exists(filepath))
+            {
+                File.Create(filepath).Close();
+            }
+
             File.AppendAllText(filepath, "File Content To Display!");
             bool getfile = false;
             while (!getfile)
