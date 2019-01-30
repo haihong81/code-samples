@@ -30,8 +30,11 @@ namespace Samples
                                     //new Action(PropertiesDemo.PropertiesOveride),
                                     //new Action(PropertiesDemo.PropertiesOveride),
 
+                                    //特性 Attribute
+                                    new Action(AttributeDemo.Run),
+
                                     //索引
-                                    new Action(IndexDemo.Reverse),                  
+                                    //new Action(IndexDemo.Reverse),                  
 
                                     ////不安全代码
                                     //new Action(UnsafeCode.FastCopy),

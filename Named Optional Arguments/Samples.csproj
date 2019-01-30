@@ -74,6 +74,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicDemo\AttributeDemo.cs" />
     <Compile Include="BasicDemo\NamedAndOptional.cs" />
     <Compile Include="BasicDemo\IEnumerableDemo.cs" />
     <Compile Include="BasicDemo\Covariant.cs" />
@@ -86,7 +87,7 @@
     <Compile Include="BasicDemo\LibraryRefDemo.cs" />
     <Compile Include="BasicDemo\EventListenDemo.cs" />
     <Compile Include="BasicDemo\PropertyDemo\PropertiesDemo.cs" />
-    <Compile Include="IndexDemo.cs" />
+    <Compile Include="BasicDemo\IndexDemo.cs" />
     <Compile Include="PlateFormInvoke\PlateFormInvoke.cs" />
     <Compile Include="UnSafeCodeDemo\printversion.cs" />
     <Compile Include="UnSafeCodeDemo\ReadFile.cs" />
