@@ -19,56 +19,54 @@ namespace Samples
 
         private static List<Action> ActionDemos()
         {
-            List<Action> actions = new List<Action>(){
+            return new List<Action>(){
 
-                                    //可空对象
-                                    new Action(NullableOperator.BoxingDemo),
-                                    new Action(NullableOperator.OperatorDemo),
-                                    new Action(NullableOperator.DisplayValueDemo),
+                                    ////可空对象
+                                    //new Action(NullableOperator.BoxingDemo),
+                                    //new Action(NullableOperator.OperatorDemo),
+                                    //new Action(NullableOperator.DisplayValueDemo),
 
-                                    //属性
-                                    new Action(PropertiesDemo.PropertiesOveride),
-                                    new Action(PropertiesDemo.PropertiesOveride),
+                                    ////属性
+                                    //new Action(PropertiesDemo.PropertiesOveride),
+                                    //new Action(PropertiesDemo.PropertiesOveride),
 
                                     //索引
                                     new Action(IndexDemo.Reverse),                  
 
-                                    //不安全代码
-                                    new Action(UnsafeCode.FastCopy),
-                                    new Action(UnsafeCode.ReadFile),
+                                    ////不安全代码
+                                    //new Action(UnsafeCode.FastCopy),
+                                    //new Action(UnsafeCode.ReadFile),
 
                                     //不安全代码 此方法无法查询出版本 原因不知 Can't PrintVersion Don't know Why
                                     //new Action(UnsafeCode.PrintVersion),
 
-                                    new Action(PartialClassesDemo.Run),             //部分类
-                                    new Action(MyDerived.OverideDemo),              //类的重写 overide
-                                    new Action(NamedAndOptional.Run),               //可选的命名参数
-                                    new Action(Generics.SortList),                  //泛型                                    
-                                    new Action(PythonScript.Run),                   //Python脚本                                    
-                                    new Action(CovariantDemo.Run),                  //继承与协变逆变
-                                    new Action(DomainPermission.SetDemo),           //权限
+                                    //new Action(PartialClassesDemo.Run),             //部分类
+                                    //new Action(MyDerived.OverideDemo),              //类的重写 overide
+                                    //new Action(NamedAndOptional.Run),               //可选的命名参数
+                                    //new Action(Generics.SortList),                  //泛型                                    
+                                    //new Action(PythonScript.Run),                   //Python脚本                                    
+                                    //new Action(CovariantDemo.Run),                  //继承与协变逆变
+                                    //new Action(DomainPermission.SetDemo),           //权限
 
-                                    //Struct与Class的区别
-                                    new Action(ClassAndStructDemo.Run),
-                                    new Action(ClassAndStructDemo.GetSetMethod),
+                                    ////Struct与Class的区别
+                                    //new Action(ClassAndStructDemo.Run),
+                                    //new Action(ClassAndStructDemo.GetSetMethod),
 
-                                    //IEnumerable
-                                    new Action(IEnumerableDemo.Yield),
-                                    new Action(IEnumerableDemo.EnumerateTokens),
+                                    ////IEnumerable
+                                    //new Action(IEnumerableDemo.Yield),
+                                    //new Action(IEnumerableDemo.EnumerateTokens),
 
-                                    //Event
-                                    new Action(EventListenDemo.Run),
+                                    ////Event
+                                    //new Action(EventListenDemo.Run),
 
-                                    //类库引用
-                                    new Action(LibraryRefDemo.Run),
+                                    ////类库引用
+                                    //new Action(LibraryRefDemo.Run),
 
-                                    //平台调用 调用错误 堆栈不平衡  
-                                    //new Action(PlatformInvokeDemo.Run),
-                                    //new Action(PlatformInvokeDemo1.Run),
-                                    //new Action(PlatformInvokeDemo2.Run),
+                                    ////平台调用 调用错误 堆栈不平衡  
+                                    ////new Action(PlatformInvokeDemo.Run),
+                                    ////new Action(PlatformInvokeDemo1.Run),
+                                    ////new Action(PlatformInvokeDemo2.Run),
             };
-
-            return actions;
         }
 
         //private static List<Func<int>> FuncDemos()

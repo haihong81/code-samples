@@ -7,8 +7,8 @@ public class FileByteArray
 {
     private Stream stream;      // 包含用于访问
 
-                                // 该文件的基础流。
-                                // 创建封装特定文件的新 FileByteArray。
+    // 该文件的基础流。
+    // 创建封装特定文件的新 FileByteArray。
     public FileByteArray(string fileName)
     {
         stream = new FileStream(fileName, FileMode.Open);
@@ -59,18 +59,14 @@ public class IndexDemo
     public static void Reverse()
     {
         string filepath = "TEST.TXT";
+
         if (!File.Exists(filepath))
         {
             File.Create(filepath).Close();
             File.AppendAllText(filepath, "File Content To Display!");
         }
 
-        // 检查文件是否存在
-        if (!System.IO.File.Exists(filepath))
-        {
-            Console.WriteLine("File " + filepath + " not found.");
-            return;
-        }
+        Console.WriteLine(File.ReadAllText(filepath));
 
         FileByteArray file = new FileByteArray(filepath);
         long len = file.Length;
@@ -87,7 +83,7 @@ public class IndexDemo
             file[i] = file[len - i - 1];
             file[len - i - 1] = t;
         }
-
         file.Close();
+        Console.WriteLine(File.ReadAllText(filepath));
     }
 }
