@@ -92,6 +92,9 @@
     <Compile Include="BasicDemo\IndexDemo.cs" />
     <Compile Include="BasicDemo\ExplicitInterface.cs" />
     <Compile Include="PlateFormInvoke\PlateFormInvoke.cs" />
+    <Compile Include="Threads\ThreadWorkers.cs" />
+    <Compile Include="Threads\ThreadPool.cs" />
+    <Compile Include="Threads\ThreadSync.cs" />
     <Compile Include="UnSafeCodeDemo\printversion.cs" />
     <Compile Include="UnSafeCodeDemo\ReadFile.cs" />
     <Compile Include="BasicDemo\StructDemo.cs" />
