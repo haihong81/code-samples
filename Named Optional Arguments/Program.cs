@@ -49,7 +49,8 @@ namespace Samples
                 //new Action(AttributeDemo.ShowConditional),    //ConditionalAttribute
 
                 //索引
-                //new Action(IndexDemo.Reverse), 
+                new Action(IndexDemo.Reverse),
+                new Action(IndexDemo.RunReplace), 
 
                 ////Event
                 //new Action(EventListenDemo.Run),
@@ -64,10 +65,17 @@ namespace Samples
 
                 //Threads
                 //new Action(ThreadDemo.RunWorkers),                                                 
-                new Action(ThreadDemo.RunPool),
+                //new Action(ThreadDemo.RunPool),
                 //new Action(ThreadDemo.RunSync),                                                 
 
+                //Conversion
+                //new Action(ConversionDemo.RunConversion),
+                //new Action(ConversionDemo.RunStructConverssion),
 
+                //Operator Overlording
+                //new Action(OperatorOverlordingDemo.RunDBBool),
+                //new Action(OperatorOverlordingDemo.RunComplex),
+                
 
                 ////不安全代码
                 //new Action(UnsafeCode.FastCopy),
