@@ -82,7 +82,7 @@
     <Compile Include="BasicDemo\Covariant.cs" />
     <Compile Include="BasicDemo\PropertyDemo\PropertiesOverideDemo.cs" />
     <Compile Include="BasicDemo\IndexDemoReplace.cs" />
-    <Compile Include="OperatorOverlordingDemo.cs" />
+    <Compile Include="BasicDemo\OperatorOverlordingDemo.cs" />
     <Compile Include="DomainPermission\DomainPermission.cs" />
     <Compile Include="BasicDemo\PartialClass\CharTypesPrivate.cs" />
     <Compile Include="BasicDemo\PartialClass\CharTypesPublic.cs" />
@@ -94,8 +94,8 @@
     <Compile Include="BasicDemo\IndexDemoReverse.cs" />
     <Compile Include="BasicDemo\ExplicitInterface.cs" />
     <Compile Include="PlateFormInvoke\PlateFormInvoke.cs" />
-    <Compile Include="Conversion\Conversion.cs" />
-    <Compile Include="Conversion\StructConversion.cs" />
+    <Compile Include="BasicDemo\Conversion\Conversion.cs" />
+    <Compile Include="BasicDemo\Conversion\StructConversion.cs" />
     <Compile Include="Threads\ThreadWorkers.cs" />
     <Compile Include="Threads\ThreadPool.cs" />
     <Compile Include="Threads\ThreadSync.cs" />
