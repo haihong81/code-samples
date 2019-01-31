@@ -5,7 +5,7 @@ using Functions;
 
 class LibraryRefDemo
 {
-    public static void Run()
+    public static void Show()
     {
         string[] args = new string[] {"3","5" };
 

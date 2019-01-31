@@ -10,7 +10,7 @@ namespace Samples
             Console.WriteLine("Name = {0} - Age = {1} - City = {2}", name, age, city);
         }
 
-        public static void Run()
+        public static void Show()
         {
             // 标准调用
             Search("Sue", 22, "New York");

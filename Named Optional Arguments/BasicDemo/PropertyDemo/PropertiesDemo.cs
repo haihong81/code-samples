@@ -4,7 +4,7 @@ namespace Samples
 {
     public partial class PropertiesDemo
     {
-        public static void PropertiesOveride()
+        public static void PropertiesAssign()
         {
             Console.WriteLine("Simple Properties");
 
@@ -61,6 +61,4 @@ namespace Samples
             return "Name = " + Name + ", Age = " + Age;
         }
     }
-
-
 }

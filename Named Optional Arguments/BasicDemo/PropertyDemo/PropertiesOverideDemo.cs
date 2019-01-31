@@ -2,14 +2,14 @@
 {
     public partial class PropertiesDemo
     {
-        public static void PropertiesOverideDemo()
+        public static void PropertiesOveride()
         {
             Shape[] shapes =
-               {
-            new Square(5, "Square #1"),
-            new Circle(3, "Circle #1"),
-            new Rectangle( 4, 5, "Rectangle #1")
-         };
+            {
+                new Square(5, "Square #1"),
+                new Circle(3, "Circle #1"),
+                new Rectangle( 4, 5, "Rectangle #1")
+             };
 
             System.Console.WriteLine("Shapes Collection");
             foreach (Shape s in shapes)

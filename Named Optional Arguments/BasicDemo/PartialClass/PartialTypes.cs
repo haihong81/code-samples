@@ -4,7 +4,7 @@ namespace Samples
 {
     internal class PartialClassesDemo
     {
-        public static void Run()
+        public static void Show()
         {
             string str = "abc123";
             // CharValues 是一个分部类 -- 该分部类有两个方法

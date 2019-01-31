@@ -26,7 +26,7 @@ namespace Samples
         {
             c.x = 5;
         }
-        public static void Run()
+        public static void Show()
         {
             TheStruct a = new TheStruct();
             TheClass b = new TheClass();

@@ -80,7 +80,7 @@ namespace Samples
             }
         }
 
-        public static void Run()
+        public static void Customerize()
         {
             // 显示 Account 类的特性
             DumpAttributes(typeof(Account));

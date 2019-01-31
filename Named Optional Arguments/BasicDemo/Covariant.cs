@@ -15,7 +15,7 @@ namespace Samples
 
         private delegate void ContravariantAction<in TDecendent>(TDecendent a);
 
-        public static void Run()
+        public static void Show()
         {
             //父类函数指向子类函数 协变 子类方法转变为父类方法
             CovariantFunc<Derived> DecendentFunc = () => new Derived();

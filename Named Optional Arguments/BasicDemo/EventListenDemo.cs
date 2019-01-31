@@ -9,7 +9,7 @@ namespace Samples
     internal class EventListenDemo
     {
         // 测试 ListWithChangedEvent 类。
-        public static void Run()
+        public static void Show()
         {
             // 创建新列表。
             ListWithChangedEvent list = new ListWithChangedEvent();
