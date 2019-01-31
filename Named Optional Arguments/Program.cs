@@ -63,8 +63,8 @@ namespace Samples
                 //new Action(MultiInterfaceDemoBox.Show),  
 
                 //Threads
-                new Action(ThreadDemo.RunWorkers),                                                 
-                //new Action(ThreadDemo.RunPool),                                                 
+                //new Action(ThreadDemo.RunWorkers),                                                 
+                new Action(ThreadDemo.RunPool),
                 //new Action(ThreadDemo.RunSync),                                                 
 
 

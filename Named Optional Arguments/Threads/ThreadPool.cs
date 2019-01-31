@@ -65,7 +65,7 @@ namespace Samples
     {
         public static void RunPool()
         {
-            const int FibonacciCalculations = 10;
+            const int FibonacciCalculations = 20;
 
             // 每个 Fibonacci 对象使用一个事件
             ManualResetEvent[] doneEvents = new ManualResetEvent[FibonacciCalculations];

@@ -168,7 +168,7 @@ namespace Samples
             // 每隔 2.5 秒显示一次队列内容。
             for (int i = 0; i < 4; i++)
             {
-                Thread.Sleep(2500);
+                Thread.Sleep(500);
                 ShowQueueContents(queue);
             }
 

@@ -33,7 +33,6 @@ namespace Samples
             // 创建线程对象。这不会启动该线程。
             Worker workerObject = new Worker();
             Thread workerThread = new Thread(workerObject.DoWork);
-
             // 启动辅助线程。
             workerThread.Start();
             Console.WriteLine("main thread: Starting worker thread...");
